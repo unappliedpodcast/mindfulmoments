@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mindful Moments</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mindful Moments</h1>
+  </header>
+
+  <main id="home-screen">
+    <p id="prompt" class="prompt"></p>
+
+    <label for="entry">Your reflection</label>
+    <textarea id="entry" placeholder="Write what’s on your mind…"></textarea>
+
+    <label for="mood">Mood</label>
+    <select id="mood">
+      <option value="😊">😊</option>
+      <option value="😐">😐</option>
+      <option value="😔">😔</option>
+    </select>
+
+    <button id="save-btn">Save entry</button>
+
+    <nav class="nav">
+      <button id="history-btn">History</button>
+      <button id="premium-btn">Premium</button>
+    </nav>
+  </main>
+
+  <section id="history-screen" class="hidden">
+    <h2>Your past entries</h2>
+    <ul id="history-list"></ul>
+    <button class="back-btn">Back</button>
+  </section>
+
+  <section id="premium-screen" class="hidden">
+    <h2>Premium prompts</h2>
+    <p class="small">Donate $5 or more on Ko‑fi to unlock these extras.</p>
+    <a href="https://ko-fi.com/mindfulmomentsapp" target="_blank" class="donate-link">Donate on Ko‑fi</a>
+    <ul id="premium-prompts"></ul>
+    <button class="back-btn">Back</button>
+  </section>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Mindful Moments",
+  "short_name": "MindfulMoments",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFE5B4",
+  "theme_color": "#87CEEB",
+  "icons": []
+}
